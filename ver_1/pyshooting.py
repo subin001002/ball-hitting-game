@@ -60,7 +60,7 @@ def drawObject(obj, x, y):
     
 #Game Reset
 def initGame():
-    global gamePad, clock, background, fighter, missile, explosion, missileSound, gameOverSound       # global 변수 호출
+    global gamePad, clock, background, fighter, missile, explosion, missileSound, gameoverSound       # global 변수 호출
     pygame.init()                                                           # Lib 초기화
     gamePad = pygame.display.set_mode((padWidth, padHeight))                # 게임 전체 크기 정의
     pygame.display.set_caption('PyShooting_Cho_Exam')                       # 게임 이름 정의
@@ -71,7 +71,7 @@ def initGame():
     pygame.mixer.music.load('sound/music.wav')                              # 배경 음악
     pygame.mixer.music.play(-1)                                             # 배경 음악 재생
     missileSound = pygame.mixer.Sound('sound/missile.wav')                  # 미사일 사운드
-    gameOverSound = pygame.mixer.Sound('sound/gameover.wav')                # 게임 오버 사운드
+    gameoverSound = pygame.mixer.Sound('sound/gameover.wav')                # 게임 오버 사운드
     clock = pygame.time.Clock()
 
 #Game Start
